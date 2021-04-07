@@ -1,3 +1,5 @@
+/* C program for estimation of Pi using Monte
+   Carlo Simulation */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -26,7 +28,7 @@ char** argv;
             y = (double)rand() / RAND_MAX;
             rad = x * x + y * y;
             if (rad <= 1) d_inside++;
-            //printf("di is %d \n " ,d_inside);}
+            //printf("di is %d \n " ,d_inside);
         }
         MPI_Reduce(&d_inside, &inside_tot, 1, MPI_LONG_LONG_INT, MPI_SUM, 0, MPI_COMM_WORLD);
             if (rank == 0) {
