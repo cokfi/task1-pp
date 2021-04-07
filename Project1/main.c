@@ -29,7 +29,6 @@ char** argv;
             //printf("di is %d \n " ,d_inside);}
         }
         MPI_Reduce(&d_inside, &inside_tot, 1, MPI_LONG_LONG_INT, MPI_SUM, 0, MPI_COMM_WORLD);
-        if (rank == 0) {
             if (rank == 0) {
                 //printf("in_tot is %lli \n " ,inside_tot);
                 d_total = d_total + (long long int)size * 100000;
