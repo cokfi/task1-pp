@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\Documents\C\junk\first_template.c" />
+    <ClCompile Include="..\..\..\..\Documents\C\parllel_processing_VM\task1\calcpi2.c" />
     <ClCompile Include="main.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
